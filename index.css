@@ -182,6 +182,7 @@ body {
 .player-title {
     font-size: 25px;
     margin-top: 25px;
+    margin-bottom: 25px;
     text-align: left;
 }
 
@@ -219,6 +220,14 @@ body {
     }
     .group {
         width: 100px;
+    }
+    #newBookmark{
+        font-size: 70px;
+        line-height: 100px;
+        font-weight: 200;
+    }
+    .player-title {
+        text-align: center;
     }
 }
 
