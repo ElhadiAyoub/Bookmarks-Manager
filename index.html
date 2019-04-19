@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"></meta>
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
+    <title>BOOKMARKS MANAGER</title>
+    <link rel="icon" href="images/bm.png"></link>
+    <meta name="viewport" content="width=device-width, user-scalable=no"></meta>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400" rel="stylesheet"></link>
+</head>
+
+<body>
+    <div id="main">
+        <div id="head">
+            <p id="main-title">BOOKMARKS MANAGER</p>
+            <div id="main-logo"></div>
+        </div>
+        <section class="v-section">
+            <div class="wide-div">
+                <div id="grid">
+                    <div class="group">
+                        <input id="newBookmark" class="item" type="button" value="+"></input>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="player">
+            <div class="wide-div">
+                <p class="player-title">Add a new bookmark</p>
+                <img id="player-image" src="images/bm.png"></img>
+                <p>TITLE</p>
+                <input id="player-title-input" type="text" class="player-input" placeholder="TITLE"></input>
+                <p>IMAGE LINK (1:1)</p>
+                <input id="player-image-input" type="text" class="player-input" placeholder="IMAGE LINK"></input>
+                <p>LINK</p>
+                <input id="player-link-input" type="text" class="player-input" placeholder="LINK"></input>
+                <input id="player-add-button" type="button" class="player-input player-input-button" value="ADD"></input>
+                <a id="player-close" class="player-link">✕</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

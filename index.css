@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: .5s ease;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+#main {
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #1d1d1d;
+}
+
+#main-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    background-image: url(images/bm.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+#main-title {
+    font-size: 4vw;
+}
+
+.wide-div {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.group {
+    position: relative;
+    color: #000000;
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;
+    animation: show .5s ease;
+    animation-fill-mode: forwards;
+    margin: 10px;
+    opacity: 0;
+}
+
+.removeElement {
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.removeElement:hover {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.group p {
+    font-size: .75em;
+    margin: 10px;
+}
+
+.item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: #dddddd;
+    background-size: contain;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 5px #dddddd;
+}
+
+.item:hover~.removeElement {
+    opacity: .5;
+    background-color: #fff;
+}
+
+#player-image{
+    width: 150px;
+    height: 150px;
+    background-color: #1d1d1d;
+    border: 0px;
+}
+
+#player {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    color: #fff;
+    background-image: linear-gradient(#000, #1d1d1d);
+    animation: popup .5s ease;
+}
+
+.player-input {
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 0px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    transform: scale(1);
+    animation: show 1s ease;
+}
+
+.player-input-button {
+    border: 2px solid #0AAFF1;
+    background-color: #0AAFF1;
+}
+
+.player-input-button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+@keyframes show {
+    0% {
+        margin-top: 30px;
+        opacity: 0.75;
+    }
+    100% {
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+.player-link {
+    margin: 10px;
+    text-decoration: none;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.player-link:hover {
+    text-decoration: underline;
+}
+
+#player-close {
+    margin: 25px;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#player p {
+    margin-top: 10px;
+}
+
+.player-title {
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+@keyframes popup {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        margin-top: 0px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 10px;
+    }
+}
+
+#newBookmark{
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    .item {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .group {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #main-title {
+        font-size: 50px;
+    }
+}
