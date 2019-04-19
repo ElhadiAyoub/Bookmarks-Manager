@@ -100,7 +100,7 @@ body {
     background-color: #fff;
 }
 
-#player-image{
+#player-image {
     width: 150px;
     height: 150px;
     background-color: #1d1d1d;
@@ -116,6 +116,7 @@ body {
     min-height: 100%;
     color: #fff;
     background-image: linear-gradient(#000, #1d1d1d);
+    box-shadow: 0 0 50px 50px #444444;
     animation: popup .5s ease;
 }
 
@@ -206,7 +207,7 @@ body {
     }
 }
 
-#newBookmark{
+#newBookmark {
     font-size: 100px;
     line-height: 150px;
     font-weight: 200;
@@ -216,18 +217,21 @@ body {
     .item {
         width: 100px;
         height: 100px;
-        margin: 5px;
     }
     .group {
         width: 100px;
     }
-    #newBookmark{
+    #newBookmark {
         font-size: 70px;
         line-height: 100px;
         font-weight: 200;
     }
     .player-title {
         text-align: center;
+    }
+    .removeElement {
+        opacity: .5;
+        margin: 0px;
     }
 }
 
